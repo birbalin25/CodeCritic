@@ -20,4 +20,4 @@ df = df.filter(col("state") == "CA")
 
 results = df.collect()
 
-df.write.mode("overwrite").csv("dbfs:/tmp/inefficient_output")
+df.write.mode("overwrite").saveAsTable("bircatalog.birschema.testTabe123")
